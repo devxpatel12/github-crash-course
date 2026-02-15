@@ -52,12 +52,43 @@
             border-left: 3px solid #4CAF50;
             padding-left: 15px;
         }
+        
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to My Basic Site</h1>
     
     <a href="https://www.example.com">Visit Example.com</a>
+    
+    <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+    </form>
     
     <ul>
         <li>First item</li>
